@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity.MainActivity">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"></ImageView>
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:textSize="15sp"
+            android:text="Select image"
+            android:onClick="onClickSelectImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+    <Button
+        android:visibility="gone"
+        android:id="@+id/predictBtn"
+       android:textSize="15sp"
+        android:text="Predict"
+        android:onClick="onClickPredictImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Button>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
